@@ -1,3 +1,30 @@
+
+<script>
+const rows = 5;
+
+function printRow (space,star) {
+
+    for (let i = 1; i <= rows; i++) {
+
+        spaces = rows - i;
+        let space = '';
+        for (let j = 0; j < spaces; j++) {
+            space = `${space}` + '-';
+        }
+
+        stars = 2 * i - 1;
+        let star = '';
+        for (let j = 0; j < stars; j++) {
+            star = `${star}` + '*';
+        }
+
+        // return (space, star);
+        console.log();
+    }
+
+}
+printRow ();
+</script>
 <script>
 const rows = 5;
 const star = '*';
